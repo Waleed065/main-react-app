@@ -1,0 +1,29 @@
+.keywords-container-flex {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.postAdMain-form-field-input:nth-child(5) {
+  grid-column: span 2;
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 901px) {
+  .keywords-container-flex {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .keywords-container-flex {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .keywords-container-flex {
+    grid-template-columns: auto;
+  }
+  .postAdMain-form-field-input:nth-child(5) {
+    grid-column: span 1;
+  }
+}

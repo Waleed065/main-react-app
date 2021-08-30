@@ -1,0 +1,96 @@
+#ourServices-items-filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - var(--navbarHeight));
+  width: 300px;
+  padding: 30px var(--defaultOverViewSpace);
+  border-right: 1px dashed var(--bgColor2);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+#ourServices-items-filter-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+#ourServices-items-filter-tab-shab {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--defaultOverViewSpace);
+
+  height: 50px;
+
+  border-bottom: 1px dashed var(--bgColor2);
+  display: none;
+}
+.p-class {
+  margin: 0;
+  margin-right: 5px;
+  align-self: center;
+
+  font-size: var(--textSizeNormal);
+  color: var(--textColor3);
+  font-weight: var(--textWeightThin);
+}
+
+#ourServices-items-filter-container h3 {
+  margin-bottom: 10px;
+}
+
+#ourServices-items-filter-sub-container {
+  margin-top: 20px;
+}
+
+.ourServices-items-filter-flex-box {
+  align-items: "center";
+
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.ourServices-items-filter p {
+  margin: 0;
+  margin-right: 5px;
+  align-self: center;
+
+  font-size: var(--textSizeNormal);
+  color: var(--textColor3);
+  font-weight: var(--textWeightThin);
+}
+.ourServices-items-filter-flex-box > label {
+  font-size: var(--textSizeLarge);
+  color: var(--textColor2);
+  font-weight: var(--textWeightBold);
+  margin-right: 5px
+}
+
+#ourServices-items-filter-price {
+  margin-top: 10px;
+}
+#ourServices-items-filter-price input {
+  width: 60px;
+  height: 25px;
+  border: 1px solid var(--bgColor2);
+  border-radius: 5px;
+  margin-right: 5px;
+  outline-color: var(--primaryThemeColor);
+  margin-bottom: 5px;
+}
+
+#ourServices-items-filter-bottom-box {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 860px) {
+  #ourServices-items-filter-container {
+    width: 100%;
+    /* display: none; */
+  }
+  #ourServices-items-filter-tab-shab {
+    display: flex;
+
+  }
+}

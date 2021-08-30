@@ -1,0 +1,164 @@
+#receipt {
+  --receiptPadding: 30px;
+  background: var(--bgColor1);
+  /* box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25); */
+  width: 550px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#receipt input {
+  width: 100%;
+}
+
+#receipt-container {
+  padding-left: var(--receiptPadding);
+  padding-right: var(--receiptPadding);
+  padding-top: 20px;
+}
+
+#receipt-weed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  height: 100px;
+  font-size: 50px;
+  font-style: italic;
+  color: var(--primaryThemeColor);
+  /* border-bottom: 1px solid var(--bgColor2); */
+}
+
+.receipt-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.receipt-form > input {
+  border: none;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  outline-color: var(--primaryThemeColor);
+}
+
+.receipt-flex .receipt-form {
+  width: 48% !important;
+}
+.receipt-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#receipt-total-container {
+  font-size: var(--textSizeNormal);
+  margin-bottom: 10px;
+}
+
+.recipt-form-heading-container {
+  display: inline-flex;
+  align-items: center;
+}
+.recipt-form-heading-container > h3 {
+  margin: 0 5px;
+}
+
+#receipt-main {
+  background-color: var(--primaryThemeColorLite);
+  border-top-color: var(--bgColor2);
+
+  background-image: linear-gradient(
+    to right,
+    var(--bgColor2) 40%,
+    var(--bgColor1) 10%
+  );
+  background-size: 35px 2px;
+  background-repeat: repeat-x;
+
+  padding: var(--receiptPadding) var(--receiptPadding) 20px
+    var(--receiptPadding);
+}
+
+#print-button {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+
+  background-color: transparent;
+  border: 1px solid var(--textColor2);
+  color: var(--textColor2);
+}
+
+#receipt-buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkOut-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  background: var(--primaryThemeColorDarkGradient);
+  color: var(--textColor1);
+}
+
+#saw-tooth {
+  padding: 15px;
+
+  background-image: linear-gradient(
+      135deg,
+      var(--primaryThemeColorLite) 17px,
+      transparent 18px
+    ),
+    linear-gradient(225deg, var(--primaryThemeColorLite) 17px, transparent 18px);
+  background-size: 25px 25px;
+  background-repeat: repeat-x;
+}
+
+#success{
+  font-size: 30px;
+  color: var(--primaryThemeColor);
+  text-align: center;
+}
+
+
+/* -----------------><--------------- */
+@media only screen and (max-width: 600px) {
+  #receipt {
+    width: 90vw;
+  }
+  #receipt-weed-container {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 411px) {
+  #receipt {
+    width: 82vw;
+    --receiptPadding: 20px;
+  }
+  #receipt-total-container {
+    font-size: var(--textSizeSmall);
+  }
+  #receipt-weed-container {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #receipt {
+    --receiptPadding: 20px;
+  }
+  .checkOut-button {
+    width: 80px;
+  }
+  #print-button {
+    width: 80px;
+  }
+}

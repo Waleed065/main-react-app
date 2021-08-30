@@ -1,0 +1,6 @@
+#favorites-container {
+  min-height: 100vh;
+  padding-top: var(--navbarHeight);
+  display: flex;
+  flex-direction: column;
+}

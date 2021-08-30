@@ -1,0 +1,68 @@
+.chatItSelf-container {
+  --chatItSelfContainerHeight: 100px;
+  --chatItSelfPadding: 10px;
+
+  position: relative;
+
+  display: flex;
+  height: var(--chatItSelfContainerHeight);
+  padding: var(--chatItSelfPadding);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.active-chatItSelf {
+  background-color: var(--primaryThemeColorLite);
+}
+
+.chatItSelf-container * {
+  cursor: pointer;
+}
+.chatItSelf-container:hover {
+  background-color: var(--primaryThemeColorLite);
+}
+
+.chatItSelf-container > img {
+  width: 80px;
+  height: 80px;
+  background-color: lightgray;
+  border-radius: 80px;
+  margin-right: 10px;
+}
+
+.chatItSelf-details-container {
+  display: flex;
+  overflow: hidden;
+
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatItSelf-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.chatItSelf-date {
+  color: var(--textColor3);
+  font-size: 12px;
+  font-weight: var(--textWeightThin);
+}
+
+.chatItSelf-details > label {
+  color: var(--textColor2);
+  font-weight: var(--textWeightBold);
+}
+
+/* ----------------><---------------- */
+/* @media only screen and (max-width: 360px) {
+  .chatItSelf-container {
+    --chatItSelfContainerHeight: 80px;
+  }
+  .chatItSelf-details-container {
+    padding: 4px 0px;
+  }
+} */

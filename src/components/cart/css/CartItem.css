@@ -1,0 +1,81 @@
+.cart-item-container {
+  padding: 20px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-img {
+  width: 80px;
+  height: 55px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.cart-room-title-container {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+.cart-rooms-prominant {
+  display: flex;
+  align-items: center;
+}
+
+.cart-rooms-prominant > a {
+  color: var(--textColor2);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+  margin-right: 10px;
+}
+.cart-rooms-prominant > a:hover {
+  text-decoration: underline;
+}
+
+.cart-rooms-date-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-rooms-date {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: var(--textWeightThin);
+  color: var(--textColor3);
+}
+.cart-rooms-date > span {
+  font-weight: var(--textWeightBold);
+}
+.cart-rooms-date > label {
+  margin-top: 5px;
+}
+
+.cart-rooms-last-section {
+  display: inline-flex;
+  align-self: start;
+  align-items: center;
+}
+.cart-rooms-last-section > .cart-close-icon {
+  margin: 0px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-room-title-container {
+    margin: 0;
+
+    min-width: 65%;
+    margin-bottom: 20px;
+  }
+  .cart-img {
+    margin-bottom: 20px;
+  }
+  .cart-rooms-last-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+}

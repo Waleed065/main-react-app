@@ -1,0 +1,11 @@
+.ratings-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ratings-rated {
+  color: var(--textColor2);
+  font-size: var(--textSizeSmall);
+  font-weight: var(--textWeightThin);
+  margin-left: 5px;
+}

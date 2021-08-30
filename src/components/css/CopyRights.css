@@ -1,0 +1,11 @@
+#footerCopyRights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryThemeColor);
+  color: var(--textColor1);
+  font-size: var(--textSizeSmall);
+  font-weight: var(--textWeightThin);
+  text-align: center;
+  min-height: 40px
+}

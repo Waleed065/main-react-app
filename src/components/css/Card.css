@@ -1,0 +1,77 @@
+.card {
+  position: relative;
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  min-width: var(--minCardWidth);
+  min-height: var(--minCardHeight);
+  flex: 1;
+  box-shadow: none;
+  transition: opacity var(--defaultTransition),
+    border-color var(--defaultTransition),
+    background-color var(--defaultTransition),
+    transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  /* transition: all var(--defaultTransition); */
+  border-radius: 20px;
+  cursor: pointer;
+
+  overflow: hidden;
+
+}
+
+.inActiveCard {
+  opacity: 0.7;
+  transform: scale(0.8);
+  background-color: var(--bgColor1);
+}
+
+.activeCard {
+  opacity: 1;
+  transform: scale(1);
+  background-color: var(--bgColor1);
+}
+
+.card-pic{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
+  z-index: 0;
+}
+
+.cardCoverContainer {
+  z-index: 5000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: var(--textColor1);
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  
+  padding: 50px;
+}
+
+.cardCoverContainer > h2 {
+  font-size: var(--textSizeLarge);
+  font-weight: var(--textWeightBold);
+}
+.cardCoverContainer > p {
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+
+/* -----------------><--------------- */
+
+@media only screen and (max-width: 540px) {
+  .cardCoverContainer {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .cardCoverContainer > h2 {
+    font-size: var(--textSizeNormal);
+  }
+  .cardCoverContainer > p {
+    font-size: var(--textSizeSmall);
+  }
+}

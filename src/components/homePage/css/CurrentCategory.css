@@ -1,0 +1,101 @@
+#ourServicesContainer {
+  --currentCategoryImgWidth: 400px;
+  --currentCategoryImgMargin: 40px;
+  margin: 0px var(--defaultSpace);
+  display: flex;
+  justify-content: center;
+}
+
+#ourServicesContainer > img {
+  width: var(--currentCategoryImgWidth);
+  height: calc(var(--currentCategoryImgWidth) * 0.75);
+  margin-left: var(--currentCategoryImgMargin);
+  margin-bottom: var(--currentCategoryImgMargin);
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: calc(var(--currentCategoryImgMargin) * (-1))
+    var(--currentCategoryImgMargin) var(--bgColor2);
+}
+
+
+#currentCategory-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--currentCategoryImgMargin);
+  margin-left: var(--currentCategoryImgMargin);
+
+  width: var(--currentCategoryImgWidth);
+  justify-content: flex-end;
+}
+
+#currentCategory-details > label {
+  font-size: var(--textSizeLarge);
+  font-weight: var(--textWeightThin);
+  color: var(--textColor2);
+}
+#currentCategory-details > h3 {
+  font-size: var(--textSizeLarge);
+  font-weight: var(--textWeightBold);
+  color: var(--textColor2);
+  margin: 20px 0px;
+}
+#currentCategory-details > p {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+  color: var(--textColor3);
+}
+
+/* width: 30vw;
+height: 22vw; */
+
+/* --------------------><------------------ */
+@media only screen and (max-width: 1024px) {
+  #ourServicesContainer {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #ourServicesContainer {
+    --currentCategoryImgWidth: 40vw;
+    --currentCategoryImgMargin: 30px;
+  }
+  #currentCategory-details {
+    margin-left: 10px;
+  }
+
+  #currentCategory-details > h3 {
+    margin: 10px 0px;
+  }
+  #currentCategory-details > p {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #ourServicesContainer {
+    --currentCategoryImgWidth: 282px;
+    --currentCategoryImgMargin: 25px;
+  }
+
+  #ourServicesContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #currentCategory-details {
+    margin: 20px 0px;
+    width: 95%;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #ourServicesContainer {
+    --currentCategoryImgWidth: 200px;
+    --currentCategoryImgMargin: 15px;
+  }
+  #ourServicesContainer > img {
+    border-radius: 10px;
+  }
+}

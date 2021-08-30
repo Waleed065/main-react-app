@@ -1,0 +1,30 @@
+#postAdMain-amenities-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.postAdMain-amenity {
+  width: 48%;
+  margin: 10px 0px;
+}
+.postAdMain-amenity-flex{
+  display: inline-flex;
+  align-items: center;
+}
+.postAdMain-amenity-flex * {
+  cursor: pointer;
+}
+.postAdMain-amenity-flex > span {
+  margin: 0px 10px;
+}
+
+@media only screen and (max-width: 540px) {
+  .postAdMain-amenity-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .postAdMain-amenity-flex > input {
+    margin-bottom: 5px;
+  }
+}

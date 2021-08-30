@@ -1,0 +1,45 @@
+#amenities-container {
+  --amenitiesIconSize: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--defaultOverViewSpace);
+  margin-top: 5px;
+}
+
+#amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.amenities-item {
+  display: flex;
+  margin: 20px 0px;
+  width: 45%;
+  white-space: pre-line;
+}
+
+.amenities-item-details {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.amenities-item-details > p {
+  color: var(--textColor3);
+}
+
+/* ------------------><------------------ */
+@media only screen and (max-width: 560px) {
+  .amenities-item-details .heading {
+    font-size: var(--textSizeNormal);
+  }
+  .amenities-item {
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin: 5px 0px;
+    text-align: center;
+  }
+  .amenities-item-details {
+    margin-left: 0;
+  }
+}

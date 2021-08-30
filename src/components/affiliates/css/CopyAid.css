@@ -1,0 +1,16 @@
+.affiliates-clipboard-container{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor2);
+    height: var(--inputHeight);
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.affiliates-clipboard-container > p{
+    margin-right: 10px;
+    text-decoration: underline;
+}

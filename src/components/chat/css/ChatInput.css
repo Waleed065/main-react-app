@@ -1,0 +1,22 @@
+
+#chatInput-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#chatInput-container > input {
+  height: 30px;
+  border: 1px solid var(--primaryThemeColor);
+  border-radius: 1000px;
+  flex: 1;
+  outline: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.chatInput-icons {
+  padding: 0px 10px;
+}

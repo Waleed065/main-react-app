@@ -1,0 +1,49 @@
+.chatMain-container #chats-container {
+  /* width: 100%; */
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--bgColor1);
+  z-index: 1;
+  height: 100%;
+  min-height: var(--quickChatHeight);
+  border-right: 1px dashed var(--bgColor2);
+}
+
+.chatMain-container .chatItSelf-content {
+  width: 25vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ---------------------><------------------- */
+/* @media only screen and (max-width: 900px) { */
+.chatMain-container-900px #chats-container {
+  background-color: var(--bgColor1);
+  z-index: 1;
+  height: 100%;
+  min-height: var(--quickChatHeight);
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  border-right: none;
+  transition: all var(--defaultTransition);
+}
+
+.chatMain-container-900px #chats-container.showChat {
+  left: -100%;
+}
+.chatMain-container-900px #chats-container.hideChat {
+  left: 0px;
+}
+
+.chatMain-container-900px .chatItSelf-content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  width: 65vw;
+}
+/* } */

@@ -1,0 +1,68 @@
+.message-container {
+  display: flex;
+  justify-content: flex-end;
+  
+  margin: calc(var(--messageMargin) / 2) var(--messageMargin);
+}
+.selfMessage-container {
+  justify-content: flex-end;
+}
+.otherMessage-container {
+  justify-content: flex-start;
+}
+
+.selfMessage-container > .message {
+  border-radius: 10px 0px;
+  background-color: var(--primaryThemeColor);
+}
+.otherMessage-container > .message {
+  border-radius: 0px 10px;
+  background-color: gray;
+}
+
+.message {
+  margin: 0px;
+
+  padding: var(--messagePadding);
+  color: var(--textColor1);
+  font-weight: var(--textWeightThin);
+  font-size: var(--textSizeNormal);
+  text-align: left;
+  max-width: 70%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.message > p {
+  margin: 0px;
+}
+
+.message > img {
+  transition: all var(--defaultTransition);
+}
+.messageImage {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.message-time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
+}
+.message-time > label {
+  margin-right: 5px;
+  font-size: var(--textSizeSmall);
+}
+
+
+/* -----------------><----------------- */
+@media only screen and (max-width: 411px) {
+  .message {
+    max-width: 90%;
+  }
+}

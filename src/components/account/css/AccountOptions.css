@@ -1,0 +1,44 @@
+#accountOptions-container {
+  flex: 1;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+.accountOption-itself {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 120px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--textColor2);
+  font-weight: var(--textWeightThin);
+  font-size: var(--textSizeNormal);
+}
+.accountOption-itself > label {
+  margin-top: 8px;
+}
+.accountOption-itself > div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background-color: var(--primaryThemeColorLite);
+}
+
+
+
+
+
+/* ----------------><--------------- */
+@media only screen and (max-width: 411px) {
+  #accountOptions-container {
+    grid-template-columns: auto;
+  }
+}

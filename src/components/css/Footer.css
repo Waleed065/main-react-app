@@ -1,0 +1,72 @@
+#footer {
+  background-color: var(--primaryThemeColor);
+  padding: 20px var(--defaultSpace);
+}
+
+#footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerContainerLeftDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#footerContainer label {
+  line-height: 50px;
+  color: var(--textColor1);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+#footerContainer a > label {
+  cursor: pointer;
+}
+
+#footerContainer a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--textColor1);
+  /* cursor: pointer; */
+}
+
+#footerContainerIcons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerIcons {
+  color: var(--textColor1);
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 20px;
+}
+
+#footerRightDetailsContainer {
+  display: flex;
+}
+.footerRightDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+
+  line-height: 50px;
+  color: var(--textColor1);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+
+
+@media (max-width: 620px) {
+  #footerContainerIcons {
+    justify-content: center;
+  }
+  #footerContainer {
+    justify-content: center;
+    text-align: center;
+  }
+  #footerContainerRightDiv {
+    display: none;
+  }
+}

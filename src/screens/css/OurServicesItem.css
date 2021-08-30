@@ -1,0 +1,20 @@
+#ourServices-item {
+  position: relative;
+  background-color: var(--bgColor1);
+  padding-top: var(--navbarHeight);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+  scroll-margin-top: var(--navbarHeight);
+}
+
+.ourServices-paddingHorizontal {
+  padding-left: var(--defaultOverViewSpace);
+  padding-right: var(--defaultOverViewSpace);
+}
+
+.our-services-extras-container{
+  margin-top: 20px;
+}

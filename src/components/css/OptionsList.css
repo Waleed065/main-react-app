@@ -1,0 +1,34 @@
+.searchoptions-input-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.searchoptions-input-option > img {
+  width: 5px;
+  width: 30px;
+  object-fit: fill;
+}
+.searchoptions-input-option > label {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+.searchoptions-input-option:hover {
+  background-color: var(--primaryThemeColorLite);
+}
+
+#optionslist-empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#optionslist-empty-container > label{
+  color: var(--primaryThemeColor);
+  font-size: var(--textSizeLarge);
+}

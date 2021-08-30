@@ -1,0 +1,79 @@
+#profile-box-container {
+  position: relative;
+  width: 40%;
+  min-width: 320px;
+  max-height: 390px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: rgba(120, 120, 120, 0.2) 0px 7px 29px 0px;
+
+  margin-right: 20px;
+}
+
+#profile-image-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--bgColor2);
+}
+
+#profile-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 1500px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#edit-profile-pic {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-box-container img {
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#profile-box-container input[type="text"] {
+  width: 100%;
+  font-size: var(--textSizeNormal);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.profileBox-icon {
+  margin-left: 5px;
+}
+#profile-image-box > label {
+  color: var(--textColor2);
+  font-weight: var(--textWeightBold);
+  font-size: var(--textSizeNormal);
+}
+
+
+/* ---------------------><-------------------- */
+@media only screen and (max-width: 1024px) {
+  #profile-box-container {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #profile-box-container {
+    width: 95%;
+    min-width: auto;
+  }
+}

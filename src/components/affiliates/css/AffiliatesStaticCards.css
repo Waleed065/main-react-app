@@ -1,0 +1,47 @@
+#affiliates-card-container {
+  background-color: var(--bgColor2);
+  padding: var(--defaultSpace);
+}
+#affiliates-card-container > h2{
+    text-align: center;
+    margin: 50px;
+    color: var(--primaryThemeColor)
+}
+#affiliates-card-container-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.affiliates-card {
+  background-color: var(--bgColor1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 50px 30px;
+  text-align: center;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.affiliates-card > h3 {
+  color: var(--primaryThemeColor);
+  font-size: var(--textSizeLarge);
+  font-weight: var(--textWeightBold);
+  margin: 10px;
+}
+.affiliates-card > p {
+  color: var(--textColor2);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+
+
+@media only screen and (max-width: 900px) {
+  #affiliates-card-container-grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #affiliates-card-container-grid {
+    grid-template-columns: auto;
+  }
+}

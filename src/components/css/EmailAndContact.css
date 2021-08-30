@@ -1,0 +1,28 @@
+.profile-box-details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.profile-box-details-container > h3 {
+  color: var(--textColor2);
+  font-weight: var(--textWeightBold);
+  font-size: var(--textSizeNormal);
+  width: 90px;
+}
+.profileBox-flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.profileBox-flex > label {
+  color: var(--textColor3);
+  font-weight: var(--textWeightThin);
+  font-size: var(--textSizeNormal);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}

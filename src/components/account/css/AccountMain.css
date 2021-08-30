@@ -1,0 +1,17 @@
+#account-main-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 25px var(--defaultSpace);
+}
+
+/* ----------------><-------------- */
+@media only screen and (max-width: 1024px) {
+  #account-main-container {
+    flex-direction: column;
+  }
+
+  #profile-box-container{
+    align-self: center;
+  }
+}

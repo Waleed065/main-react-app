@@ -1,0 +1,45 @@
+#popular-amenities-container {
+  --popularAmenitiesIconSize: 22px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: var(--defaultOverViewSpace);
+  padding-bottom: var(--defaultOverViewSpace);
+  margin-bottom: var(--defaultOverViewSpace);
+}
+
+#popular-amenities-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-amenities-row-item {
+  display: inline-flex;
+  align-items: center;
+}
+.popular-amenities-row-item > label {
+  margin-left: 10px;
+  font-size: var(--textSizeNormal);
+}
+
+/* -----------------><--------------- */
+@media (max-width: 1050px) {
+  .popular-amenities-row-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular-amenities-row-item > label {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .popular-amenities-row-item > label {
+    font-size: var(--textSizeSmall);
+  }
+}
+@media (max-width: 500px) {
+  .popular-amenities-row-item > label {
+    display: none;
+  }
+}

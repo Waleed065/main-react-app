@@ -1,0 +1,6 @@
+#account-container {
+  position: relative;
+  padding-top: var(--navbarHeight);
+  display: flex;
+  flex-direction: column;
+}

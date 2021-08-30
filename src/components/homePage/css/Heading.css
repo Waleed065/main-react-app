@@ -1,0 +1,8 @@
+.heading-context{
+    color: var(--textColor2);
+    font-size: var(--textSizeXLarge);
+    font-weight: var(--textWeightBold);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

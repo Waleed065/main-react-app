@@ -1,0 +1,89 @@
+.total-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--textColor2);
+  border-top-color: var(--bgColor2);
+
+  background-image: linear-gradient(
+    to right,
+    var(--bgColor2) 40%,
+    var(--bgColor1) 10%
+  );
+  background-size: 35px 2px;
+  background-repeat: repeat-x;
+}
+
+.scissor {
+  position: absolute;
+  right: 0px;
+  top: -9px;
+  color: var(--textColor2);
+  background-color: var(--bgColor1);
+  font-size: 20px;
+  z-index: 3;
+  transform: rotate(180deg);
+}
+
+.servicesFooter {
+  display: flex;
+  overflow: hidden;
+}
+
+.servicesFooter > .servicesFooterButtons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--navbarHeight);
+  cursor: pointer;
+}
+
+.printButton {
+  justify-content: center;
+  border-top: 1px solid var(--bgColor2);
+  color: var(--textColor3);
+  font-size: var(--textSizeLarge);
+  font-weight: var(--textWeightThin);
+}
+
+.orderButton {
+  background: var(--primaryThemeColorDarkGradient);
+  color: var(--textColor1);
+}
+.orderButton:active{
+  transform: none !important;
+}
+.orderButton > h3 {
+  margin: auto;
+  color: var(--textColor1);
+  font-size: var(--textSizeLarge);
+  font-weight: var(--textWeightBold);
+}
+
+.orderIcon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 20%;
+  min-width: 40px;
+  margin: 0px 20px;
+  height: 100%;
+  border-right: 1px solid var(--bgColor2);
+}
+
+
+/* --------------><-------------- */
+@media only screen and (max-width: 411px) {
+  .orderButton > h3 {
+    margin: 0;
+  }
+  .printButton {
+    font-size: var(--textSizeNormal);
+  }
+  .orderButton > h3 {
+    font-size: var(--textSizeNormal);
+  }
+}

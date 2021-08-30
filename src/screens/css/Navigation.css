@@ -1,0 +1,15 @@
+#cart-hydrogen-bomb {
+  width: 80vw;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #cart-hydrogen-bomb {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 411px) {
+  #cart-hydrogen-bomb {
+    width: 100vw;
+  }
+}

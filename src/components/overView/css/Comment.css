@@ -1,0 +1,60 @@
+.review-comment {
+  --reviewAvatarSize: 50px;
+  display: flex;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.review-comment > img {
+  width: var(--reviewAvatarSize);
+  height: var(--reviewAvatarSize);
+  margin-right: 10px;
+  border-radius: 1000px;
+}
+
+#comment-container {
+  background-color: var(--primaryThemeColorLite);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-radius: 0 20px 20px 20px;
+}
+
+.review-comment-title {
+  --titleLineHeight: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  line-height: var(--titleLineHeight);
+  color: var(--textColor2);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightBold);
+  margin-top: calc(var(--reviewAvatarSize) / 2 - var(--titleLineHeight) / 2);
+}
+.review-comment-title > label {
+  margin-right: 5px;
+}
+.review-comment-published {
+  color: var(--textColor3);
+  font-size: var(--textSizeSmall);
+  font-weight: var(--textWeightThin);
+}
+
+.review-comment-like-section {
+  display: inline-flex;
+  margin-top: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.review-comment-like-section > label {
+  margin-left: 5px;
+  margin-right: 25px;
+}
+
+/* -------------------><------------------ */
+@media only screen and (max-width: 411px) {
+  .review-comment-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

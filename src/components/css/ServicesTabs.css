@@ -1,0 +1,18 @@
+#services-top-tabs-container {
+  position: relative;
+  display: flex;
+  background: var(--primaryThemeColorDarkGradient);
+
+  /* border-radius: 20px 20px 0px 0px; */
+  overflow: hidden;
+  height: var(--navbarHeight);
+}
+
+#bubble {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  top: 0px;
+  background: var(--bgColor1);
+  transition: var(--defaultTransition);
+}

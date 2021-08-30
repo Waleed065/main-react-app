@@ -1,0 +1,30 @@
+#add-ons-modal {
+  background-color: var(--bgColor1);
+
+  border-radius: 10px;
+  max-width: 550px;
+  height: 80%;
+  min-height: 350px;
+  flex: 1;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  position: relative;
+  outline: none;
+}
+
+#add-ons-modal::-webkit-scrollbar {
+  display: none;
+}
+
+
+#add-ons-fab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5;
+  position: relative;
+}

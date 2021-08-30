@@ -1,0 +1,9 @@
+#ourServices-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: calc(100vh - var(--navbarHeight));
+  color: var(--primaryThemeColor);
+}

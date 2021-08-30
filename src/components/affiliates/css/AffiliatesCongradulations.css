@@ -1,0 +1,21 @@
+#congradulations-container {
+  background-color: var(--primaryThemeColorLite);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+#congradulations-container > h3{
+    color: var(--primaryThemeColor);
+    font-size: var(--textSizeLarge);
+    font-weight: var(--textWeightBold);
+    margin: 20px 0;
+}
+
+#congradulations-container > p{
+    color: var(--textColor2);
+    font-size: var(--textSizeNormal);
+    font-weight: var(--textWeightThin);
+    line-height: 25px
+}

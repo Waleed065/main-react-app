@@ -1,0 +1,16 @@
+#category-items-container {
+  position: relative;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  height: 650px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#category-items-container::-webkit-scrollbar {
+  display: none;
+}

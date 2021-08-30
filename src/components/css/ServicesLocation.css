@@ -1,0 +1,26 @@
+#services-location-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+.service-location{
+  width: 49%
+}
+
+
+.services-location-empty-search {
+  color: var(--primaryThemeColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 200px;
+  padding: 20px 0;
+}
+
+.services-location-selection-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

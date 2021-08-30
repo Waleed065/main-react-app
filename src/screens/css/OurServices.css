@@ -1,0 +1,11 @@
+#ourServices-items-container {
+  display: flex;
+  padding-top: var(--navbarHeight);
+}
+
+@media only screen and (max-width: 860px) {
+  #ourServices-items-container {
+    flex-direction: column;
+    /* overflow: auto; */
+  }
+}

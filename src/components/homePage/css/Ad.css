@@ -1,0 +1,15 @@
+#adContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 200px
+}
+
+#adImage {
+  width: calc(100% - (var(--defaultSpace) * 2));
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 50px;
+}

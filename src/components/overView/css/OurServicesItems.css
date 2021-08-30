@@ -1,0 +1,22 @@
+#our-services-items-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  flex: 1;
+  padding: var(--defaultOverViewSpace) 12px;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+}
+
+
+@media only screen and (max-width: 1100px) {
+  #our-services-items-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #our-services-items-container {
+    grid-template-columns: auto;
+  }
+}

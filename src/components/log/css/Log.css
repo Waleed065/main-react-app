@@ -1,0 +1,163 @@
+.log-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  background: var(--bgColor1);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.log-container::-webkit-scrollbar {
+  display: none;
+}
+
+#log-image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+#log-image-container > img {
+  width: 100%;
+  height: 100%;
+}
+#log-back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: var(--inputHeight);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.log-button:nth-of-type(2) {
+  margin-top: 30px;
+}
+.log-button > label {
+  color: var(--textColor3);
+  margin-left: 10px;
+}
+
+.log-form {
+  padding: 20px 100px;
+  position: relative;
+}
+.log-form > h1 {
+  color: var(--textColor2);
+  font-size: var(--textSizeXLarge);
+  font-weight: var(--textWeightBold);
+  padding-bottom: 20px;
+}
+.log-form > h3 {
+  position: relative;
+  color: var(--textColor2);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightBold);
+  margin-bottom: 10px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  color: var(--textColor2);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+.phone-input > #phone-options {
+  position: relative;
+}
+.phone-input > #phone-options > label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  height: var(--inputHeight);
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.phone-input > input {
+  /* flex: 1; */
+  width: 100%;
+  padding: 0px 10px;
+  height: var(--inputHeight);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox > p {
+  color: var(--textColor2);
+  font-size: var(--textSizeSmall);
+  font-weight: var(--textWeightThin);
+  cursor: pointer;
+}
+
+#log-options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  left: 0px;
+  bottom: calc(var(--inputHeight) + 5px);
+  max-height: 250px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow-y: auto;
+  background-color: var(--bgColor1);
+  z-index: 1;
+}
+
+
+.themeButton{
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .log-form {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 411px) {
+  .log-form {
+    padding: 20px 30px;
+  }
+  .checkbox > input {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .log-form {
+    padding: 20px 15px;
+  }
+}

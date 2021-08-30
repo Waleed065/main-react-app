@@ -1,0 +1,12 @@
+#ourServices-filter-list {
+  max-width: 550px;
+  background: var(--bgColor1);
+  padding-bottom: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#ourServices-filter-list::-webkit-scrollbar {
+  display: none;
+}

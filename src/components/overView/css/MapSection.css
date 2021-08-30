@@ -1,0 +1,67 @@
+#map-section-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: var(--defaultOverViewSpace);
+  padding-bottom: var(--defaultOverViewSpace);
+  margin-bottom: var(--defaultOverViewSpace);
+}
+#map-section {
+  width: 100%;
+  height: 600px;
+  margin-bottom: var(--defaultOverViewSpace);
+}
+
+#map-section-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#map-section-details > button {
+  color: var(--textColor1);
+  font-size: var(--textSizeSmall);
+  font-weight: var(--textWeightBold);
+
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: var(--primaryThemeColor);
+}
+
+.mapSection-readMore {
+  margin: 0px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+.mapSection-readLess {
+  margin: 0px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.mapSection-readMore-text {
+  color: var(--textColor3);
+  font-size: 13px;
+  font-weight: var(--textWeightThin);
+  line-height: 35px;
+  cursor: pointer;
+}
+.mapSection-readMore-text:hover {
+  text-decoration: underline;
+}
+
+/* --------------><------------- */
+@media (max-width: 900px) {
+  #map-section {
+    height: 500px;
+  }
+}
+@media (max-width: 700px) {
+  #map-section {
+    height: 400px;
+  }
+}
+@media (max-width: 550px) {
+  #map-section {
+    height: 300px;
+  }
+}

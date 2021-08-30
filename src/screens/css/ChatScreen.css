@@ -1,0 +1,8 @@
+#chat-screen-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  padding-top: var(--navbarHeight);
+}

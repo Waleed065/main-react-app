@@ -1,0 +1,8 @@
+#location-drawer-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    min-height: 350px;
+    padding: var(--defaultSpace)
+}

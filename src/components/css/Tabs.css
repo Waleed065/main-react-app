@@ -1,0 +1,63 @@
+#tab-container {
+  position: sticky;
+  top: var(--navbarHeight);
+
+  background-color: var(--bgColor1);
+  display: flex;
+  align-items: center;
+  height: var(--tabsHeight);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+
+.tab-buttons {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--defaultTransition);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+
+.inactive-tab-button {
+  color: var(--textColor2);
+}
+.active-tab-button {
+  color: var(--primaryThemeColor);
+  /* border-bottom: 3px solid var(--primaryThemeColor); */
+}
+
+#tabs-bubble {
+  position: absolute;
+  height: 4px;
+  bottom: 0px;
+  background-color: var(--primaryThemeColor);
+  transition: var(--defaultTransition);
+}
+
+/*  -----------><-------------  */
+@media only screen and (max-width: 540px) {
+  #tab-container {
+    justify-content: space-between;
+  }
+  .tab-buttons {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 411px) {
+  #tabs-bubble {
+    height: 3px;
+  }
+  .tab-buttons {
+    font-size: var(--textSizeSmall);
+  }
+}
+@media only screen and (max-width: 360px) {
+
+  .tab-buttons {
+    font-size: 12px;
+  }
+}

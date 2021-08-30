@@ -1,0 +1,25 @@
+#navbarsearch-container {
+  position: relative;
+
+  flex: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#navbarsearch-input-container {
+  height: 35px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  padding: 0 5px;
+  background-color: var(--bgColor1);
+  align-items: center;
+
+  flex: 1;
+}
+
+
+#navbarsearch-input{
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    width: 100%;
+}

@@ -1,0 +1,11 @@
+.grid-3 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+.card-med {
+  height: 120px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

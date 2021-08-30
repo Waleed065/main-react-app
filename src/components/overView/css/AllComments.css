@@ -1,0 +1,21 @@
+#AllComments-container {
+  margin-bottom: var(--defaultOverViewSpace);
+}
+#AllComments-container > p{
+  text-align: center;
+  color: var(--textColor3);
+  font-weight: var(--textWeightThin);
+  font-size: var(--textSizeNormal);
+}
+
+#comments-loading{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+/* ------------><--------------- */
+/* @media only screen and (max-width: 411px) {
+
+} */

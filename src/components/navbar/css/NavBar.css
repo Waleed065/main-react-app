@@ -1,0 +1,13 @@
+#navBar-flex {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navBar-link {
+  margin-left: 10px;
+  color: var(--textColor1) !important;
+}
+.drawer-link {
+  color: black;
+}

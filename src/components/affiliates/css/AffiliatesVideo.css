@@ -1,0 +1,41 @@
+#affiliates-second-container {
+  padding: var(--defaultSpace);
+  padding-top: var(--navbarHeight);
+  background-color: var(--bgColor2);
+  overflow: hidden;
+}
+#affiliates-second-container > h2 {
+  text-align: center;
+  margin: 20px;
+  color: var(--primaryThemeColor)
+}
+.affiliates-para {
+  flex: 0.5;
+  margin: 0;
+  margin-left: 20px;
+  line-height: 25px;
+  color: var(--textColor2);
+  font-size: var(--textSizeNormal);
+  font-weight: var(--textWeightThin);
+}
+
+.affiliates-video-container {
+  flex: 1;
+  aspect-ratio: 1.8/1;
+}
+
+.affiliates-flex {
+  display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .affiliates-flex {
+    display: block;
+  }
+  .affiliates-video-container {
+    margin-bottom: 30px;
+  }
+  .affiliates-para {
+    margin: 0;
+  }
+}

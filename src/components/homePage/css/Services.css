@@ -1,0 +1,20 @@
+#services-action-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px 20px;
+}
+
+/* -------------------><----------------- */
+@media only screen and (max-width: 411px) {
+  #services-action-container {
+    padding: 30px 10px;
+  }
+}
+/* -------------------><----------------- */
+@media only screen and (max-width: 360px) {
+  #services-action-container {
+    padding: 30px 5px;
+  }
+}

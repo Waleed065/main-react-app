@@ -1,0 +1,11 @@
+.services-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: var(--cardHeight);
+  box-shadow: 0px 5px 20px var(--shadowColor1);
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--bgColor1);
+}

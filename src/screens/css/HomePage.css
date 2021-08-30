@@ -1,0 +1,20 @@
+#homePage-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#imgAndServicesContainer {
+  background-color: var(--bgColor2);
+  border-radius: 0 0 100% 100%/0 0 20% 20%;
+  box-shadow: 0 10px 15px -5px var(--shadowColor2);
+}
+
+
+
+/* ----------------><--------------- */
+@media only screen and (max-width: 1024px) {
+  #imgAndServicesContainer {
+    border-radius: 0 0 100% 100%/0 0 10% 10%;
+  }  
+}

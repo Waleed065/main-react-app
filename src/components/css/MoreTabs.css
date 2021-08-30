@@ -1,0 +1,37 @@
+#more-tabs {
+  --moreTabsWidth: 250px;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--primaryThemeColorLite);
+  width: var(--moreTabsWidth);
+  right: 0px;
+  height: 50%;
+  padding: 20px;
+  top: var(--navbarHeight);
+  border-radius: 0 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.show-more-tabs-transition-enter,
+.show-more-tabs-transition-appear {
+  transform: translateX(var(--moreTabsWidth));
+  /* max-width: 0px; */
+}
+
+.show-more-tabs-transition-enter-active,
+.show-more-tabs-transition-appear-active {
+  transform: translateX(0);
+  /* max-width: 250px; */
+  transition: all 300ms;
+}
+
+.show-more-tabs-transition-exit {
+  transform: translateX(0);
+  /* max-width: 250px; */
+}
+
+.show-more-tabs-transition-exit-active {
+  transform: translateX(var(--moreTabsWidth));
+  /* max-width: 0px; */
+  transition: all 300ms;
+}
